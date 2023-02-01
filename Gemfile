@@ -20,6 +20,9 @@ gem 'rails', '>0.a'
 # Provides basic authentication functionality for testing parts of your engine
 gem 'solidus_auth_devise'
 
+# Fixed gem for Ruby 3
+gem "acts_as_commentable", github: "epicery/acts_as_commentable", branch: "master"
+
 case ENV['DB']
 when 'mysql'
   gem 'mysql2'
